@@ -1,0 +1,341 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins atau fallback sans-serif */
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Customization */
+.navbar-dark.bg-primary {
+    background-color: #004d9a !important; /* Biru tua yang elegan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 'melayang' */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+}
+
+.navbar-nav .btn-light {
+    background-color: #f8f9fa;
+    color: #004d9a !important;
+    border-radius: 50px; /* Lebih bulat */
+    padding: 8px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .btn-light:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px); /* Efek sedikit naik */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, rgba(0, 77, 154, 0.9), rgba(0, 102, 204, 0.8)), url('../img/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 70vh; /* Tinggi yang lebih proporsional */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Bayangan teks agar lebih terbaca */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Lapisan gelap tipis */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem; /* Ukuran font lebih besar */
+    font-weight: 800; /* Lebih tebal */
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1s ease-out; /* Animasi muncul */
+}
+
+.hero-section p.lead {
+    font-size: 1.6rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    animation: fadeInUp 1s ease-out 0.3s forwards; /* Animasi muncul setelah h1 */
+    opacity: 0; /* Awalnya sembunyikan untuk animasi */
+}
+
+.hero-section .btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-out 0.6s forwards; /* Animasi muncul setelah p */
+    opacity: 0;
+}
+
+.hero-section .btn-warning {
+    background-color: #ffc107; /* Kuning cerah */
+    border-color: #ffc107;
+    color: #333; /* Teks gelap untuk kontras */
+}
+
+.hero-section .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background-color: #fff; /* Latar belakang putih */
+}
+
+.features-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #004d9a;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.features-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #ffc107; /* Garis bawah kuning */
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+.features-section .card {
+    border: none;
+    border-radius: 15px; /* Sudut lebih bulat */
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Bayangan lebih halus */
+    padding: 20px;
+}
+
+.features-section .card:hover {
+    transform: translateY(-15px); /* Efek mengangkat lebih jauh */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Bayangan lebih kuat saat hover */
+    background-color: #eaf3ff; /* Warna latar belakang lembut saat hover */
+}
+
+.features-section .card-body {
+    padding: 30px;
+}
+
+.features-section .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.features-section .card-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.text-primary { color: #004d9a !important; } /* Konsisten dengan warna navbar */
+.text-success { color: #28a745 !important; }
+.text-info { color: #17a2b8 !important; }
+
+/* Footer */
+footer {
+    background-color: #212529; /* Darker footer */
+    color: #adb5bd; /* Light gray text */
+    padding: 40px 0;
+    font-size: 0.95rem;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+    .hero-section .btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+    .features-section h2 {
+        font-size: 2.5rem;
+    }
+    .features-section .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+    .hero-section .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+/* Admin/User Dashboard Styling - Keep these for internal pages */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #2c3e50; /* Darker background */
+    padding-top: 20px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Added shadow to sidebar */
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar-heading {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #ecf0f1; /* Lighter text color */
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .list-group-item:hover,
+.sidebar .list-group-item.active {
+    background-color: #34495e; /* Slightly lighter on hover/active */
+    color: #ffffff;
+}
+
+#wrapper.toggled .sidebar {
+    margin-left: -250px;
+}
+
+.main-content {
+    margin-left: 250px; /* Offset for sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 250px);
+}
+
+#wrapper.toggled .main-content {
+    margin-left: 0;
+    width: 100%;
+}
+
+.dashboard-card {
+    border-left: 5px solid;
+    border-radius: .35rem;
+}
+
+.dashboard-card.border-primary { border-color: #004d9a !important; }
+.dashboard-card.border-success { border-color: #28a745 !important; }
+.dashboard-card.border-warning { border-color: #ffc107 !important; }
+.dashboard-card.border-info { border-color: #17a2b8 !important; }
+
+/* Form Styles */
+.form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 77, 154, 0.25);
+}
+
+.btn-primary, .btn-success {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
