@@ -1,8 +1,10 @@
 <?php
-$servername = "localhost";
-$username = "root"; // Sesuai dengan username MySQL Anda
-$password = "";     // Sesuai dengan password MySQL Anda (default XAMPP kosong)
-$dbname = "dapen_asji_db"; // Ganti dengan nama database Anda
+$env = parse_ini_file(__DIR__ . '/../.env');
+
+$servername = $env['DB_HOST'];
+$username   = $env['DB_USERNAME'];
+$password   = $env['DB_PASSWORD'];
+$dbname     = $env['DB_DATABASE'];
 
 // Buat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,4 +13,3 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Koneksi database gagal: " . $conn->connect_error);
 }
-?>
