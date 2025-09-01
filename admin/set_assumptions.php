@@ -208,7 +208,7 @@ $stmt_asji->close();
                 </select>
             </div>
             <div class="mb-3">
-                <label for="l0" class="form-label">Penentuan $l_0$</label>
+                <label for="l0" class="form-label">Penentuan</label>
                 <select class="form-select" id="l0" name="l0" required>
                     <option value="">Pilih Nilai</option>
                     <option value="10000" <?php echo ($assumption_data && $assumption_data['l0'] == 10000) ? 'selected' : ''; ?>>10.000</option>
