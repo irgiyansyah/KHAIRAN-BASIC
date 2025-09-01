@@ -19,8 +19,8 @@ include_once 'includes/functions.php';
         <div class="container">
             <h1 class="display-3 fw-bold mb-4">Solusi Perencanaan Keuangan Anda</h1>
             <p class="lead mb-5">Simulasi Dana Pensiun dan Asuransi Jiwa yang Akurat dan Mudah.</p>
-            <a href="login.php" class="btn btn-warning btn-lg me-3">Mulai Simulasi Sekarang</a>
-            <a href="about.php" class="btn btn-outline-light btn-lg">Pelajari Lebih Lanjut</a>
+            <a href="login" class="btn btn-warning btn-lg me-3">Mulai Simulasi Sekarang</a>
+            <a href="about" class="btn btn-outline-light btn-lg">Pelajari Lebih Lanjut</a>
         </div>
     </header>
 
